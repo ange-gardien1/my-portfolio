@@ -40,6 +40,7 @@ export const Home = () => {
             </div>
           </div>
           {/* <div>photo</div> */}
+          
         </div>
       </div>
     </section>

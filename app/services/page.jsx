@@ -6,25 +6,25 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Front-End Engineer",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     href: "",
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Back-End Engineer",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Software Testing",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     href: "",
   },
   {
     num: "04",
-    title: "System Design",
+    title: "DevOps",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     href: "",
   },
@@ -49,8 +49,10 @@ const Services = () => {
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent
-                   group-hover:text-outline-hover transition-all duration-500">
+                  <div
+                    className="text-5xl font-extrabold text-outline text-transparent
+                   group-hover:text-outline-hover transition-all duration-500"
+                  >
                     {service.num}
                   </div>
                   <Link
@@ -59,10 +61,15 @@ const Services = () => {
                      group-hover:bg-accent transition-all duration-500 flex justify-center
                       items-center hover:-rotate-45"
                   >
-                    <BsArrowDownRight className="text-primary text-3xl"/>
+                    <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
                 </div>
-                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                <h2
+                  className="text-[42px] font-bold leading-none text-white
+                 group-hover:text-accent transition-all duration-500"
+                >
+                  {service.title}
+                </h2>
                 <p className="text-white/60">{service.description}</p>
                 <div className="border-b border-white/20 w-full"></div>
               </div>
